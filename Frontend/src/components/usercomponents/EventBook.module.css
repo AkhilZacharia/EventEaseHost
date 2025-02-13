@@ -1,0 +1,235 @@
+.eventPage {
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  height: 15vh;
+  background-color: #2d382d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+  margin-top: 0px;
+}
+
+.imageContainer {
+  width: 70%;
+  margin-right: 20px;
+  height: 70vh;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.eventInfo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: gray solid 0.5px;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.eventDetails {
+  margin-top: 0;
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.eventIcon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #4caf50;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #d19292;
+  margin: 15px 0;
+}
+
+.ticketPrice {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5c2920;
+  margin: 20px 0;
+}
+
+.buyNow {
+  padding: 15px 30px;
+  background-color: #571348;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.buyNow:hover {
+  background-color: #ac5332;
+}
+
+.bookingForm {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.formGroup {
+  margin: 15px 0;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.backButton,
+.confirmBooking {
+  padding: 15px 30px;
+  background-color: rgb(81, 5, 134);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.confirmBooking {
+  background-color: rgb(12, 95, 61);
+}
+
+.backButton:hover,
+.confirmBooking:hover {
+  background-color: #641c02;
+}
+
+.eventDescription {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.eventDescription h3 {
+  margin-bottom: 10px;
+}
+
+.eventDescription p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    width: 80%;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .eventInfo {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    width: 90%;
+    height: 50vh;
+    margin: 0;
+  }
+
+  .eventInfo {
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .ticketPrice {
+    font-size: 20px;
+  }
+
+  .buyNow {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .eventDescription {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 15vh;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .eventInfo {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .ticketPrice {
+    font-size: 18px;
+  }
+
+  .buyNow {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .eventDescription {
+    padding: 10px;
+  }
+}

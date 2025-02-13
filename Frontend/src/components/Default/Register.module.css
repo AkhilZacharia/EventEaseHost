@@ -1,0 +1,49 @@
+.registerContainer {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); 
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.customH2, .customH3 {
+  text-align: center;
+}
+
+.customH3 {
+  font-size: 18px;
+  color: #555;
+}
+
+.formBox {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(5px) !important; 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: rgb(216, 214, 214);
+}
+
+.description {
+  padding-left: 30px;
+  display: none;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .registerContainer {
+      padding: 40px;
+  }
+
+  .description {
+      display: block;
+  }
+}
+
+.customMuiFormHelperText {
+  font-size: 12px;
+  color: rgb(128, 57, 57);
+}

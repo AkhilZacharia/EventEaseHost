@@ -1,0 +1,76 @@
+.navbar {
+  background-color: #343a40; 
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.navbarBrand {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar-nav-scroll {
+  --bs-scroll-height: 100px;
+}
+
+.navLink.active {
+  color: #198754; 
+}
+
+.navLink {
+  color: #ffffff;
+}
+
+.navLink.disabled {
+  color: #6c757d; 
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center; 
+  flex: 1;
+}
+
+.form-control {
+  max-width: 250px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; 
+  margin-left: auto; 
+}
+
+.content {
+  padding-top: 80px;
+}
+
+@media (max-width: 991px) {
+  .content {
+    padding-top: 60px; 
+  }
+
+  .navbar .container-fluid {
+    flex-direction: column; 
+  }
+
+  .navbar-nav {
+    justify-content: flex-start; 
+    margin-top: 15px;
+  }
+
+  .formContainer {
+    width: 100%; 
+    margin-top: 10px; 
+  }
+}

@@ -1,0 +1,98 @@
+.ticketContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  backdrop-filter: blur(10px) !important;
+  overflow-y: auto; 
+}
+  
+  .ticket {
+    display: flex;
+    width: 500px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #f6f8e3;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .ticketleft, .ticketright {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .ticketleft {
+    flex: 2;
+  }
+  
+  .ticketright {
+    flex: 1;
+    border-left: 2px dashed #000;
+    text-align: center;
+  }
+  
+  .eventName {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .venue {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .dateTime {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .seatInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ticketTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .barcodePlaceholder {
+    font-size: 24px;
+    font-family: monospace;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .ticketInfo {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .barcode {
+    width: 100px;
+    height: 40px;
+    background: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 4px,
+      transparent 3px,
+      transparent 6px
+    );
+    margin: 10px auto;
+  }
