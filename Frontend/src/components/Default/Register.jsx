@@ -21,7 +21,7 @@ const Register = () => {
 
   function registerValue(){
     console.log(form);
-    axios.post('http://localhost:3000/login/add/',form).then((res)=>{
+    axios.post('https://eventeasehost-back.onrender.com/login/add/',form).then((res)=>{
      alert(res.data.message);
         navigate('/');
     }).catch((error)=>{
